@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizaciones</title>
+    <link rel="stylesheet" href="/CSS/cotiza.css">
+    <link rel="icon" sizes="192x192" href="https://cdn-icons-png.flaticon.com/512/1497/1497772.png">
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="/index.html" class="header-link">
+            <h1 class="header_title">
+                Solicita tu cotización ahora mismo
+            </h1>
+        </a>
+    </header>
+    <main>
+        <section class="section">
+            <form action="" class="formulario">
+
+                <h1 class="formulario__titulo">Banquetes Mireles</h1>
+                <h3 class="formulario__subtitulo">Cotiza</h3>
+
+                <label for="cliente" class="formulario__label">Nombre completo</label>
+                <input id="cliente" type="text" class="formulario__input" placeholder="Nombre completo" />
+
+                <label for="fecha" class="formulario__label">Indica la fecha de tu reserva</label>
+                <input id="fecha" type="date" class="formulario__input" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" />
+
+                <!-- <label for="hora" class="formulario__label">Indica hora de reserva</label>
+                <input id="hora" type="time" class="formulario__input" /> -->
+                <!-- nuevo -->
+                <label for="correo" class="formulario__email">Ingrese su correo</label>
+                <input id="correo" type="email" class="formulario__input" placeholder="Correo" />
+                
+                <label for="alcaldia" class="formulario__alcaldia">¿En qué alcaldia vives?</label>
+                <input id="alcaldia" type="text" class="formulario__input" placeholder="Alcaldia" />
+
+                <label for="cantidad" class="formulario__cantidad">Cantidad de invitados</label>
+                <input id="cantidad" type="number" class="formulario__input" placeholder="Cantidad de invitados" />
+
+
+                <!-- <label for="empleado" class="formulario__label">EMPLEADO de preferencia</label>
+                <select id="empleado" name="listaempleados" class="formulario__input">
+                    <option>Alejandra Mireles</option>
+                </select> -->
+                <div class="div_option">
+                    <label for="servicio" class="formulario__label">¿Cuál es el servicio que se desea rentar?</label>
+                    <select id="servicio" name="listaservicios" class="formulario__input">
+                        <option>Sala Launch y Mesa Tipo Picnic</option>
+                        <option>Servicio tipo buffet o comida de 3 o 2 tiempos</option>
+                        <option>Mesitas infantiles y puestos tipo kermes</option>
+                        <option>Meseros profesionales con altas medidas sanitarias</option>
+                        <option>Lonas con instalación eléctrica</option>
+                        <option>Inflables y mobiliario infantil con manteleria disney</option>
+                        <option>Carpas blancas y transparentes</option>
+                        <option>Sombrillas para jardin o terraza</option>
+                        <option>Mesas con vajilla</option>
+                        <option>Juegos infantiles</option>
+                    </select>
+    
+                    <div id="div_text_area" class="div_text">
+                        <label for="sendme" class="formulario__text">Cuentanos más acerca de tu evento</label> 
+                        <textarea name="evento" id="sendme" class="formulario__send " cols="30" rows="10"></textarea>
+                    </div>
+
+                    <div id="respuesta"></div>
+    
+                    <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="/JS/cotiza.js"></script>
+</body>
+
+</html>
